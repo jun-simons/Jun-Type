@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About|Jun's Typing Trainer</title>
+        <link href = "/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/f0243b2839.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class = "header top">
+            <a href = "#" class="about-link">Homesite</a>
+            <a href = "/HTML/typing.html" class="typing-link">Back to typing</a>
+            <h1>きれいなタイピング</h1>
+            <h2>Simple Typing, No Distractions</h2>
+        </div>
+        <h1 class = "about-title rellax" id="typewriter" data-rellax-speed="-1"></h1>
+        <div class = "scrollcue top2">
+            <h1 class="scroll-text">scroll-scroll-scroll-</h1>
+        </div>
+        <button class="settings-button" id="settings-button" onclick="openSettings()"><i class="fas fa-cog"></i></button>
+        <div class = "settings" id="settings">
+            <button class="close-settings" onclick="closeSettings()">&times;</button>
+            <h1>設定</h1>
+            <h1>SETTINGS</h1>
+            <h2 class="settings-theme-title">theme</h2>
+            <ul class="themes-list">
+                <li><button class="theme-button" id="theme1" onclick="theme1()">Neon Shadow</button></li>
+                <li><button class="theme-button" id="theme2" onclick="theme2()">Starry Night</button></li>
+                <li><button class="theme-button" id="theme3" onclick="theme3()">Minty Mist</button></li>
+            </ul>
+            <h2 class="settings-theme-title">current mode:</h2>
+            <div class="mode" id = "mode">Quote Mode</div>
+            <button class="mode-toggle" onclick="switchMode()">Switch Mode</button>
+        </div>
+       
+        <div class = "about-content">
+            <div class="about-text1 rellax fadein"  data-rellax-speed="-2">&nbsp;✺ Inspired by Japanese minimalism and text-based website design</div>
+            <div class="about-text2 rellax"  data-rellax-speed="7">
+                "きれいなタイピング" translates to "clean typing", a phrase that embodies the intention to create a typing website free from distractions.
+                <br><br>After relearning to type, I (Jun Simons) wanted to create a usable typing site free from advertisements and distractions.<br><br>
+                This site features random word mode and quote mode, featuring over 50 english quotes.  
+            </div>
+            <div class = "about-text3 rellax" data-rellax-speed="-1">
+                How the site was made<br>(about the code) 💻
+            </div>
+            <div class = "about-text4 rellax" data-rellax-speed="6">
+                The typing test is written in javascript.  Each letter
+                you type is generated as a span element that is added to the html when you begin
+                the test.  <br><br>Depending on the mode you select, this text is either taken from a list of the 1000
+                most common words in the English language, or a long list of quotes.
+            </div>
+            <!-- <div class = "about-horizontaltext" id="horizontal-text">
+                Visit <span>my homepage - </span>Visit <span>my homepage - </span>Visit <span>my homepage - </span>
+                Visit <span>my homepage - </span>Visit <span>my homepage - </span>Visit <span>my homepage - </span>
+            </div> -->
+            <div class="about-message1 rellax" data-rellax-speed="4">
+                <a href="#">Visit my personal website for more projects:</a>
+            </div>
+
+            <!-- <div class = "spinning-home-wheel rellax" data-rellax-speed="5">
+                <div class = "wheel-text">
+                    Visit my homepage - visit my homepage - 
+                </div>
+            </div> -->
+
+            <div class = "about-libraries rellax" data-rellax-speed=".5">
+                Libraries Used:
+                <br>Lettering.js
+                <br>GSAP
+                <br>AOS.js
+                <br>jquery
+                <br>rellax.js
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js" integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src = "/JS/rellax.min.js"></script>
+    <script src = "/JS/typing.js"></script>
+    <script src = "/JS/about.js"></script>
+</html>
